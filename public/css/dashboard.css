@@ -1,0 +1,66 @@
+.info-box {
+  border: 3px solid #00008B;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  max-width: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.header-box {
+  border: 3px solid #00008B;
+  background-color: black;
+  color: white;
+  padding: 1.25rem;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.header-box h1 {
+  font-weight: bold;
+  font-size: 2.2em;
+  margin: 0;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+
+/* Mobile friendliness */
+@media (max-width: 600px) {
+  .header-box h1 {
+    font-size: 1.6em;
+  }
+
+  .info-box {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 700px; /* max width on larger screens */
+  margin: 0 auto;   /* center horizontally */
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Make the canvas inside scale responsively */
+.chart-container canvas {
+  width: 100% !important;  /* override inline styles */
+  height: auto !important;
+  max-height: 400px;
+}
+
+/* Mobile friendliness */
+@media (max-width: 480px) {
+  .chart-container {
+    padding: 0.5rem;
+  }
+}
